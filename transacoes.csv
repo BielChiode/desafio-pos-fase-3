@@ -1,0 +1,21 @@
+id,data,cliente_id,tipo,valor,descricao,categoria
+1,2026-01-05,C001,credito,1500.00,Deposito salario,renda
+2,2026-01-12,C002,debito,250.75,Mercado do bairro,alimentacao
+3,2026-01-20,C001,debito,89.90,Conta de luz,utilidades
+4,2026-01-28,C003,credito,12000.00,Transferencia recebida,investimento
+5,2026-02-03,C002,debito,1200.00,Aluguel fevereiro,moradia
+6,2026-02-10,C004,credito,3200.50,Pagamento freelance,renda
+7,2026-02-15,C001,debito,15750.00,Compra de equipamentos,negocio
+8,2026-02-22,C003,debito,430.20,Posto de gasolina,transporte
+9,2026-03-01,C002,credito,1500.00,Deposito salario,renda
+10,2026-03-08,C005,debito,99.99,Streaming anual,lazer
+11,2026-03-14,C004,debito,2500.00,Reforma cozinha,moradia
+12,2026-03-19,C001,credito,800.00,Reembolso despesas,renda
+13,2026-04-02,C003,debito,640.00,Plano de saude,saude
+14,2026-04-11,C002,credito,5400.00,Venda de produto,negocio
+15,2026-04-25,C005,debito,1320.45,Curso online,educacao
+abc,2026-01-15,C006,credito,500.00,Id nao numerico,renda
+17,2026-02-18,,debito,300.00,Cliente vazio,alimentacao
+18,2026/02/30,C007,credito,750.00,Data mal formatada,renda
+19,2026-03-22,C008,transferencia,1000.00,Tipo invalido,outros
+20,2026-03-30,C009,debito,-50.00,Valor invalido negativo,outros

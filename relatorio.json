@@ -1,0 +1,98 @@
+{
+  "gerado_em": "2026-06-02 13:14:54",
+  "periodo": {
+    "mais_antiga": "2026-01-05",
+    "mais_recente": "2026-04-25"
+  },
+  "dias_periodo": 110,
+  "total_transacoes_validas": 15,
+  "resumo_mensal": {
+    "2026-01": {
+      "quantidade": 4,
+      "total_credito": 13500.0,
+      "total_debito": 340.65,
+      "saldo": 13159.35,
+      "media": 3460.16,
+      "maior_valor": {
+        "id": 4,
+        "valor": 12000.0,
+        "descricao": "Transferencia recebida"
+      },
+      "menor_valor": {
+        "id": 3,
+        "valor": 89.9,
+        "descricao": "Conta de luz"
+      }
+    },
+    "2026-02": {
+      "quantidade": 4,
+      "total_credito": 3200.5,
+      "total_debito": 17380.2,
+      "saldo": -14179.7,
+      "media": 5145.18,
+      "maior_valor": {
+        "id": 7,
+        "valor": 15750.0,
+        "descricao": "Compra de equipamentos"
+      },
+      "menor_valor": {
+        "id": 8,
+        "valor": 430.2,
+        "descricao": "Posto de gasolina"
+      }
+    },
+    "2026-03": {
+      "quantidade": 4,
+      "total_credito": 2300.0,
+      "total_debito": 2599.99,
+      "saldo": -299.99,
+      "media": 1225.0,
+      "maior_valor": {
+        "id": 11,
+        "valor": 2500.0,
+        "descricao": "Reforma cozinha"
+      },
+      "menor_valor": {
+        "id": 10,
+        "valor": 99.99,
+        "descricao": "Streaming anual"
+      }
+    },
+    "2026-04": {
+      "quantidade": 3,
+      "total_credito": 5400.0,
+      "total_debito": 1960.45,
+      "saldo": 3439.55,
+      "media": 2453.48,
+      "maior_valor": {
+        "id": 14,
+        "valor": 5400.0,
+        "descricao": "Venda de produto"
+      },
+      "menor_valor": {
+        "id": 13,
+        "valor": 640.0,
+        "descricao": "Plano de saude"
+      }
+    }
+  },
+  "suspeitas": [
+    {
+      "id": 4,
+      "data": "2026-01-28",
+      "cliente_id": "C003",
+      "tipo": "credito",
+      "valor": 12000.0,
+      "descricao": "Transferencia recebida"
+    },
+    {
+      "id": 7,
+      "data": "2026-02-15",
+      "cliente_id": "C001",
+      "tipo": "debito",
+      "valor": 15750.0,
+      "descricao": "Compra de equipamentos"
+    }
+  ],
+  "total_transacoes_invalidas": 5
+}
