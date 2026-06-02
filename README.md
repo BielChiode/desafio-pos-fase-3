@@ -46,8 +46,77 @@ python analise_pandas.py
 | `relatorio.json` | Gerado pela célula de execução principal do notebook |
 | `grafico.png` | Gerado pela célula RO2 (matplotlib) |
 
-> Esses dois arquivos **não** ficam versionados de antemão — são produzidos ao
-> executar o notebook de ponta a ponta.
+Ambos estão versionados no repositório como exemplo do resultado de uma
+execução completa — veja a seção a seguir.
+
+## Resultado da execução
+
+Os artefatos abaixo foram produzidos por uma execução do notebook sobre o
+`transacoes.csv` deste repositório (20 linhas → **15 válidas**, **5 inválidas**,
+período de 2026-01-05 a 2026-04-25).
+
+### Gráfico — Crédito vs Débito por mês (RO2)
+
+![Crédito vs Débito por mês](grafico.png)
+
+### Relatório no terminal
+
+```
+==================================================
+        RELATÓRIO DE TRANSAÇÕES - CLEARBANK
+==================================================
+Período: 2026-01-05 até 2026-04-25 (110 dias)
+Transações válidas:   15
+Transações inválidas: 5
+==================================================
+
+--- 2026-01 ---
+  Quantidade:    4
+  Total crédito: R$ 13.500,00
+  Total débito:  R$ 340,65
+  Saldo:         R$ 13.159,35
+  Média:         R$ 3.460,16
+  Maior valor:   R$ 12.000,00 (id 4 - Transferencia recebida)
+  Menor valor:   R$ 89,90 (id 3 - Conta de luz)
+...
+==================================================
+        TRANSAÇÕES SUSPEITAS (> R$ 10.000,00)
+==================================================
+  [id 4] 2026-01-28 - C003 - R$ 12.000,00 - Transferencia recebida
+  [id 7] 2026-02-15 - C001 - R$ 15.750,00 - Compra de equipamentos
+```
+
+### Trecho do `relatorio.json`
+
+```json
+{
+  "gerado_em": "2026-06-02 13:14:54",
+  "periodo": {
+    "mais_antiga": "2026-01-05",
+    "mais_recente": "2026-04-25"
+  },
+  "dias_periodo": 110,
+  "total_transacoes_validas": 15,
+  "total_transacoes_invalidas": 5,
+  "resumo_mensal": {
+    "2026-02": {
+      "quantidade": 4,
+      "total_credito": 3200.5,
+      "total_debito": 17380.2,
+      "saldo": -14179.7,
+      "media": 5145.18,
+      "maior_valor": { "id": 7, "valor": 15750.0, "descricao": "Compra de equipamentos" },
+      "menor_valor": { "id": 8, "valor": 430.2, "descricao": "Posto de gasolina" }
+    }
+  },
+  "suspeitas": [
+    { "id": 4, "data": "2026-01-28", "cliente_id": "C003", "tipo": "credito", "valor": 12000.0, "descricao": "Transferencia recebida" },
+    { "id": 7, "data": "2026-02-15", "cliente_id": "C001", "tipo": "debito", "valor": 15750.0, "descricao": "Compra de equipamentos" }
+  ]
+}
+```
+
+> O arquivo completo está em [`relatorio.json`](relatorio.json).
 
 ## Estrutura do repositório
 
