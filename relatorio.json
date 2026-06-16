@@ -6,6 +6,7 @@
   },
   "dias_periodo": 110,
   "total_transacoes_validas": 15,
+  "total_transacoes_invalidas": 5,
   "resumo_mensal": {
     "2026-01": {
       "quantidade": 4,
@@ -93,6 +94,5 @@
       "valor": 15750.0,
       "descricao": "Compra de equipamentos"
     }
-  ],
-  "total_transacoes_invalidas": 5
+  ]
 }
